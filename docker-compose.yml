@@ -30,7 +30,7 @@ services:
         pass:     teamcity
 
     volumes:
-      - teamcity_server_data:/data/teamcity_server/datadir
+      - teamcity_server_data:/data/teamcity
       - teamcity_server_logs:/opt/teamcity/logs
     ports:
       - 8111:8111
