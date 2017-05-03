@@ -22,6 +22,6 @@ ADD https://github.com/JeanRev/TeamcityDockerCloudPlugin/releases/download/v0.3.
 
 # Configure database
 ADD database.properties $TEAMCITY_DATA_PATH/config/database.properties
-RUN eval "echo \"$(cat $TEAMCITY_DATA_PATH/config/database.properties)\"" > ${TEAMCITY_DATA_PATH}`/config/database.properties 
+RUN eval "echo \"$(cat $TEAMCITY_DATA_PATH/config/database.properties)\"" > ${TEAMCITY_DATA_PATH}/config/database.properties 
 
 VOLUME $TEAMCITY_DATA_PATH
